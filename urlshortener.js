@@ -7,7 +7,7 @@ javascript:(function(){
 fetch("https://api-ssl.bitly.com/v4/shorten", {
     method : "POST",
 	headers: {
-        'Authorization': 'Bearer 2e6c6e3d74787186be9fb720477bae346d33169b',
+        'Authorization': `Bearer ${accessToken}`,
         'Content-Type': 'application/json'
     },
     body : JSON.stringify(params)
